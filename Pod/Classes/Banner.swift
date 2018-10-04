@@ -334,6 +334,9 @@ open class Banner: UIView {
     @objc public func show() {
         show(nil, duration: 3.0)
     }
+    @objc public func showWithDuration(_ duration: TimeInterval) {
+        show(nil, duration: duration)
+    }
     
     open func show(_ view: UIView? = nil, duration: TimeInterval? = nil) {
         let viewToUse = view ?? Banner.topWindow()
